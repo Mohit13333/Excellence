@@ -67,7 +67,7 @@ const Register = () => {
                 />
               </div>
               <div>
-                <h1 className="relative mb-4 text-4xl font-semibold after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-[100%] after:h-[0.5rem] after:bg-blue-500">
+                <h1 className="relative mb-4 text-4xl text-white text-center font-semibold">
                   Registration
                 </h1>
                 <form

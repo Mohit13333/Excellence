@@ -11,7 +11,7 @@ const Services = () => {
         <Navbar />
         <div className="mx-auto max-w-screen-xl py-[4rem] text-white px-[2.4rem]">
           <div className="mb-8">
-            <h1 className="text-3xl text-center font-semibold mb-6 relative after:absolute after:content-[''] after:left-[310px] after:bottom-0 after:w-[12%] after:h-[0.5rem] after:bg-blue-500">
+            <h1 className="text-3xl text-center font-semibold mb-6 relative">
               Services
             </h1>
           </div>

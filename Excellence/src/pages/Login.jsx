@@ -63,7 +63,7 @@ const Login = () => {
 
               {/* Form Section */}
               <div>
-                <h1 className="relative text-[2rem] text-center font-semibold mb-4 after:absolute after:content-[''] after:left-[120px] after:bottom-0 after:w-[20%] after:h-[0.5rem] after:bg-blue-500">
+                <h1 className="relative text-[2rem] text-center font-semibold mb-4">
                   Login
                 </h1>
 

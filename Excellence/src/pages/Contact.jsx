@@ -65,9 +65,8 @@ const Contact = () => {
               />
             </div>
 
-            {/* Form Section */}
             <div>
-              <h1 className="text-3xl text-center font-semibold mb-6 relative after:absolute after:content-[''] after:left-[120px] after:bottom-0 after:w-[30%] after:h-[0.5rem] after:bg-blue-500">
+              <h1 className="text-3xl text-center font-semibold mb-6 relative">
                 Contact Us
               </h1>
               <form
