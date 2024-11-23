@@ -5,14 +5,14 @@ import { useAuth } from "../../store/auth";
 import { useState } from "react";
 
 const Admin = () => {
-  const { user,isLoading} = useAuth();
-if(isLoading){
- return( <section className="flex items-center justify-center h-screen">
-  <div className="w-[100px] h-[100px] border-8 border-t-8 border-blue-600 border-solid rounded-full animate-spin">Loading...</div>
-</section>
- )
-
-}
+  const { user, isLoading } = useAuth();
+  if (isLoading) {
+    return (
+      <section className="flex items-center justify-center h-screen">
+        <div className="w-[100px] h-[100px] border-8 border-t-8 border-r-blue-600 border-t-green-600 border-l-rose-600 border-solid rounded-full animate-spin"></div>
+      </section>
+    );
+  }
   if (!user.isAdmin) {
     return <Navigate to="/" />;
   }

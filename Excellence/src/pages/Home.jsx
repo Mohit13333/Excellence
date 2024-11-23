@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Analytics from "./Analytics";
 import Navbar from "../components/Navbar";
@@ -12,10 +12,12 @@ const Home = () => {
   const [userData, setUserData] = useState(true);
   const { user } = useAuth();
 
-  if (userData && user) {
-    setUserName({ userName: user.userName });
-    setUserData(false);
-  }
+  useEffect(() => {
+    if (userData && user) {
+      setUserName({userName:user.userName});
+      setUserData(false);
+    }
+  }, [user, userData]);
   return (
     <>
       <main>
@@ -24,7 +26,7 @@ const Home = () => {
           <div className="md:grid md:grid-cols-2 gap-8 mx-auto max-w-screen-xl px-6">
             <div className="text-center md:text-left">
               <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
-                Hi, Welcome {userName.userName}
+                Hi, Welcome {userName.userName || "Guest"}
               </h1>
               <p className="text-2xl text-gray-600 mb-2">
                 We are the best IT service provider
